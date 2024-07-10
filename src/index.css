@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+:root {
+  --primary-color: #3936BC;
+  --secondary-color: #ff5733;
+
+  --coolBlue: #1976D2;
+  --crimsonRed: #D03135;
+  --softWhite: #F7FAFD;
+  --muted-gray: #474342;
+  --deeper-muted-gray: #827B7B;
+
+  /* --mainFontFamily: Nunito; */
+  --bigText: 30px;
+  --titleText: 20px;
+  --normalText: 16px;
+  --smallText:12px;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media(max-width:575px){
+  :root {
+    --bigText: 20px;
+    --titleText: 20px;
+    --normalText: 12px;
+    --smallText:10px;
+    
+  }
+  
+}
+
+*{
+  font-family: "Nunito", sans-serif;
+}
+/* 
+.normal_text, .small_text, .title_text{
+  color: var(--muted-gray);
+
+} */
+.p_color{
+  color: var(--crimsonRed);
+}
+.m_color{
+  color: #474342;;
+}
+.sm_color{
+  color: var(--deeper-muted-gray);
+}
+.big_text{
+  font-size: var(--bigText);
+}
+.normal_text{
+  font-size: var(--normalText);
+}
+
+.small_text{
+  font-size: var(--smallText);
+}
+
+.title_text{
+  font-size: var(--titleText);
+}
+
+@media(max-width:575px){
+  .normal_text{
+    font-size: var(--normalText);
+  }
 }

@@ -1,0 +1,94 @@
+
+.login_form_container{
+    height: 100vh;
+}
+
+.login_img_div{
+
+    /* border: 1px solid red; */
+    background-image: url("../../assets/images/signupbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 690px;
+
+}
+
+.login_form_col{
+    background-color: #F7F7F7;
+}
+
+.login_form > div{
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+
+}
+
+.login_form label{
+    display: block;
+    color: #827B7B;
+}
+
+.login_form input{
+    border: 0px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+@media (max-width:991px){
+    .login_form input{
+        background-color: unset;
+    }  
+}
+
+.login_form input:focus{
+    outline: unset;
+    border-bottom: 1px solid gray;
+}
+
+.login_form button{
+    /* color: var(--crimsonRed); */
+    background-color: var(--crimsonRed);
+    color: white;
+    border: unset;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.signup_in{
+    color: var(--crimsonRed);
+    text-decoration: none;
+}
+.login_form_small_device_container{
+    height: 100vh;
+    position: relative;
+    /* border: 2px solid red; */
+}
+.login_form_bg_small_devices{
+    background-image: url("../../assets/images/signupbg_small.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: ; */
+}
+@media(max-width:575px){
+    .login_form_bg_small_devices{
+        background-image: url("../../assets/images/signupform_xs_devices.png");
+    } 
+}
+
+.login_form_small_devices{
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 80%;
+    top: 200px;
+    left: 10%;
+    background-color: white;
+    /* margin: 0 auto; */
+}
+
+@media(max-width:575px){
+    .login_form_small_devices{
+        top: 300px;
+    }
+}

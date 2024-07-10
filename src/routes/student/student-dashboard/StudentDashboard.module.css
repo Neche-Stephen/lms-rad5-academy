@@ -1,0 +1,17 @@
+
+
+
+
+/* Student Dashboard */
+
+.student_dashboard{
+    background: linear-gradient(355deg, #C5CFE3 -18.73%, rgba(247, 247, 247, 0.7) 71.43%), url("../../../assets/images/dashboard_bg.jpeg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.welcome_widget{
+    background-color: var(--coolBlue);
+}

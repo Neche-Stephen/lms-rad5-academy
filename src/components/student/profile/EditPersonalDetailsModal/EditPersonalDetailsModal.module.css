@@ -1,0 +1,85 @@
+
+
+.personal_details{
+    border: 1px solid #B4B2B2;
+    border-radius: 18px;
+    height: 578px;
+    overflow-y: auto; 
+}
+
+
+
+/* Hide scrollbar for WebKit browsers */
+.personal_details::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.personal_details {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+
+
+
+
+.profile_btn{
+    border: 1px solid var(--crimsonRed);
+    border-radius: 18px;
+    background: white;
+
+}
+
+.editProfile_changebtn{
+    background-color: var(--crimsonRed);
+    border: unset;
+    border-radius: 14px;
+    color: white;
+}
+.editProfile_removebtn{
+    background-color: unset;
+    border: 1px solid var(--crimsonRed);
+    border-radius: 14px;
+
+}
+.editProfileForm input{
+    border: 1px solid var(--crimsonRed);   
+    border-radius: 14px; 
+    padding: 7px 20px;
+    width: 100%;
+}
+
+.editProfileForm input:focus{
+    border: 1px solid var(--crimsonRed);
+    outline: 1px solid var(--crimsonRed);
+}
+
+.editProfileForm input::placeholder{
+    font-size: var(--normalText);
+    font-weight: 600;
+    color: black;
+}
+
+.editProfileForm select{
+    border: 1px solid var(--crimsonRed);   
+    border-radius: 14px; 
+    padding: 7px 20px;
+    width: 100%;
+
+}
+
+.editProfileForm select:focus{
+    border: 1px solid var(--crimsonRed);
+    outline: 1px solid var(--crimsonRed);
+}
+
+
+
+.editProfileForm button{
+    background-color: var(--crimsonRed);
+    border: unset;
+    border-radius: 14px;
+    color: white;
+}
+
+/* border: 1px solid #B4B2B2 */

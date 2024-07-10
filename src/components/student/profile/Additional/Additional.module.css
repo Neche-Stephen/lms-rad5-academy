@@ -1,0 +1,11 @@
+
+
+.additional{
+    border: 1px solid #B4B2B2;
+    box-shadow: 0px 0px 10.4px -2px #5A80B340;
+}
+
+.additional_btn{
+    border: 1px solid var( --crimsonRed);
+    border-radius: 12px;
+}

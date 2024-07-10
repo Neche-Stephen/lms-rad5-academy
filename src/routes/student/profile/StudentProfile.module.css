@@ -1,0 +1,71 @@
+
+
+/* Student Dashboard */
+
+.profile_dashboard{
+    background: linear-gradient(355deg, #C5CFE3 -18.73%, rgba(247, 247, 247, 0.7) 71.43%), url("./images/bg.jpeg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /* background-position: -100px -400px; */
+    background-position: center;
+    background-attachment: fixed; 
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+}
+
+
+.welcome_widget{
+    background-color: var(--coolBlue);
+}
+
+.profile_section_wrapper{
+    
+    /* border: 1px solid red; */
+    height: 500px;
+}
+
+.profile_section{
+    /* border: 2px solid green; */
+    width: 90%;
+    gap: 2.5rem;
+}
+
+.profile_section_one{
+    flex: 2.5;
+}
+
+.profile_section_two{
+    flex: 7;
+
+}
+
+.editPersonalDetailsModal{
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    width: 500px;
+}
+
+@media(max-width:991px){
+    .editPersonalDetailsModal{
+        width: 300px;
+        left: 50px;
+    }
+}
+
+@media(max-width:576px){
+    .editPersonalDetailsModal{
+        width: 75%;
+        left: 100px;
+    }
+}
+
+
+@media(max-width:430px){
+    .editPersonalDetailsModal{
+        /* width: 250px; */
+        left: 30px;
+    }
+}

@@ -1,0 +1,41 @@
+
+.navbar_name{
+    margin: 0;
+    font-size: 13px;
+    position: relative;
+    top: 4px;
+}
+
+.navbar_role{
+    font-size: 11px;
+}
+
+.navbar_icon{
+    width: 3.4%;
+    /* width: 46.87px; */
+
+}
+
+@media(max-width:1200px){
+    .navbar_icon{
+        width: 4.33%;
+    }
+}
+
+@media(max-width:991px){
+    .navbar_icon{
+        width: 5.33%;
+    }
+}
+
+@media(max-width:767px){
+    .navbar_icon{
+        width: 6.83%;
+    }
+}
+
+@media(max-width:575px){
+    .navbar_icon{
+        width: 6.33%;
+    }
+}

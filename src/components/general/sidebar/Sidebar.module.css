@@ -1,0 +1,79 @@
+.offcanvas_wrapper{
+    height: 100vh;
+    /* height: calc(100vh - 170px); */
+}
+
+
+.logout_btn_wrapper{
+    position: relative;
+    top: 100px;
+    padding-bottom: 30px;
+}
+
+
+.offcanvas_container{
+    background-color: var(--softWhite);
+    /* border: 1px solid red; */
+    width: 16.67%;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    /* height: calc(100vh - 170px); */
+    /* height: 100vh; */
+
+}
+
+
+.normal_text{
+    font-size: var(--normalText);
+}
+
+/* Sidebar RAD5 Logo */
+
+.sidebar_logo_row{
+    margin-bottom: 50px;
+}
+
+/* Sidebar Row */
+.siderbar_item_row{
+    margin-bottom: 30px;
+}
+
+/* Sidebar Col */
+.sidebar_item_col{
+    width: 66.67%;
+}
+
+@media(min-width:1041px) and (max-width:1305px){
+    .sidebar_item_col{
+        width: 86.67%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1040px){
+    .sidebar_item_col{
+        width: 100%;
+    }
+}
+
+.sidebar_icon{
+    /* width: auto; */
+}
+
+@media (max-width:991px){
+    .sidebar_icon{
+        width: 100%;
+    }
+}
+
+
+
+.siderbar_logout_btn{
+    background-color: white;
+    border: unset;
+    color: var(--crimsonRed);
+    border-radius: 14px;
+    box-shadow: 0px 0px 12.3px 2px #5A80B340;
+}
+

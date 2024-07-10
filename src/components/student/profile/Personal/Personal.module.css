@@ -1,0 +1,15 @@
+
+
+.personal_details{
+    border: 1px solid #B4B2B2
+}
+
+.profile_btn{
+    border: 1px solid var(--crimsonRed);
+    border-radius: 18px;
+    background: white;
+
+}
+
+
+/* border: 1px solid #B4B2B2 */
