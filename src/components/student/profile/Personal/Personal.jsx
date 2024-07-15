@@ -28,9 +28,9 @@ export default function PersonalDetails({showEditProfileModal, setShowEditProfil
         <div className={`title_text text-center mb-5 fw-bold`}>Madueme Esther Amaka</div>
 
         <div className={`${styles.profile_btn_wrapper} d-flex flex-wrap justify-content-center`}>
-            <button className={`${styles.profile_btn} px-4 py-3 d-flex flex-wrap align-items-center`} >
-                <span><img src={PROFILE_LINK} alt="" /></span>
-                <span className='ms-2 p_color'>Share profile link</span>
+            <button className={`${styles.profile_btn} d-flex flex-wrap align-items-center`} >
+                <span className={`${styles.profile_link}  me-2 col-auto`}><img src={PROFILE_LINK} alt="" className='img-fluid' /></span>
+                <span className={`${styles.profile_link_text}  p_color col-auto`}>Share profile link</span>
             </button>
         </div>
 

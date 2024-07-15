@@ -8,7 +8,17 @@
     border: 1px solid var(--crimsonRed);
     border-radius: 18px;
     background: white;
+    padding: 10px 25px;
 
+}
+.profile_link{
+    /* width: 13%; */
+    /* flex: 0.5; */
+}
+.profile_link_text{
+    /* width: 80%; */
+    /* flex: 2; */
+    /* font-size: 12px; */
 }
 
 

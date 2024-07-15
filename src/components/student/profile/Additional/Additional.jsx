@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "./Additional.module.css";
+import ADD from './add.svg';
 
 export default function Additional() {
   return (
@@ -10,8 +11,9 @@ export default function Additional() {
              Help viewers of your profile get to know you better by adding links and a short summary about yourself.
         </div>
 
-        <button className={`${styles.additional_btn} p_color bg-white`}>
-            Add additional info
+        <button className={`${styles.additional_btn} p_color normal_text bg-white px-3 py-3`}>
+              <span className='me-2 d-sm-none d-md-inline'><img src={ADD} alt="" /></span>
+            <span>Add additional info</span>
         </button>
 
     </div>

@@ -9,20 +9,20 @@ import PROFILE_LINK from './images/link.svg';
 
 
 export default function EditPersonalDetailsModal({showEditProfileModal, setShowEditProfileModal}) {
-  const options = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
+  const options = ['Woman', 'Man', 'Prefer not to say'];
     // This function will handle the click to toggle the modal
     const handleEditClick = () => {
       setShowEditProfileModal(!showEditProfileModal);
     };
    
   return (
-    <div className={`${styles.personal_details} bg-white pt-3 pb-5 px-4 shadow d-fle flex-wrap`}>
+    <div className={`${styles.personal_details_wrapper}  bg-white pt-3 pb-5 px-4 shadow d-flex flex-wrap`}>
+              <div className={`${styles.edit_close} d-flex flex-wrap justify-content-end`} style={{cursor:"pointer"}} onClick={handleEditClick} >
+                <div className='p_color normal_text me-3'>Close</div>
+                <img src={PROFILE_EDIT} alt="" />
+              </div>
 
-        <div className=''>
-          <div className={`${styles.edit_close} d-flex flex-wrap justify-content-end`} style={{cursor:"pointer"}} onClick={handleEditClick} >
-            <div className='p_color normal_text me-3'>Close</div>
-            <img src={PROFILE_EDIT} alt="" />
-          </div>
+        <div className={`${styles.personal_details} `}>
 
           <div className={`title_text fw-semibold d-flex flex-wrap mb-3`}>Personal details</div>
           <div className='normal_text mb-3'>Add your personal details as you would like it to appear on your profile</div>
@@ -47,17 +47,18 @@ export default function EditPersonalDetailsModal({showEditProfileModal, setShowE
               <input type="text" placeholder='Chinecherem Ubawike' />
             </div>
 
-            <div className='mb-5'>
+            {/* <div className='mb-5'>
               <label htmlFor="" className='d-block fw-semibold mb-1'>Demographic Information</label>
               <select name="" id="">
                 <option value="Woman">Woman</option>
                 <option value="Man">Man</option>
                 <option value="Prefer not to say">Prefer not to say</option>
               </select>
-            </div>
+            </div> */}
 
             <div className='mb-5'>
-                  <CustomSelect options={options} placeholder="Select an option" />
+               <label htmlFor="" className='d-block fw-semibold mb-1'>Demographic Information</label>
+                <CustomSelect options={options} placeholder="Select an option" />
             </div>
             <div>
               <button className='px-4 py-1'>Save</button>

@@ -29,17 +29,68 @@
 .profile_section{
     /* border: 2px solid green; */
     width: 90%;
-    gap: 2.5rem;
+    gap: 1%;
 }
 
 .profile_section_one{
-    flex: 2.5;
+    /* flex: 2.5; */
+    width: 29%;
 }
 
 .profile_section_two{
-    flex: 7;
-
+    width: 70%;
 }
+
+@media(max-width:1200px){
+    .profile_section_one{
+        width: 34%;
+    }
+    
+    .profile_section_two{
+        width: 65%;
+    
+    }
+}
+
+@media(max-width:991px){
+    .profile_section_one{
+        width: 44%;
+    }
+    
+    .profile_section_two{
+        width: 55%;
+    }
+}
+
+@media(max-width:767px){
+    .profile_section_one{
+        width: 49%;
+    }
+    
+    .profile_section_two{
+        width: 50%;
+    }
+}
+
+
+@media(max-width:575px){
+    .profile_section_one{
+        flex: unset;
+        width: 90%;
+    }
+    
+    .profile_section_two{
+        flex: unset;
+        width: 90%;
+    
+    }
+
+    .profile_section{
+        /* width: 90%; */
+        gap: unset;
+    }
+}
+
 
 .editPersonalDetailsModal{
     position: absolute;

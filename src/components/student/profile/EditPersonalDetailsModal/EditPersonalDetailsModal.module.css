@@ -1,9 +1,14 @@
 
 
-.personal_details{
-    border: 1px solid #B4B2B2;
+
+.personal_details_wrapper{
+    /* border: 1px solid #B4B2B2; */
     border-radius: 18px;
-    height: 578px;
+}
+
+.personal_details{
+    /* min-height: 578px; */
+    height: 478px;
     overflow-y: auto; 
 }
 
@@ -19,9 +24,10 @@
     scrollbar-width: none; /* Firefox */
 }
 
+.edit_close{
+    width: 100%;
 
-
-
+}
 
 .profile_btn{
     border: 1px solid var(--crimsonRed);

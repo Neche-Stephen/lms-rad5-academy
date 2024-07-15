@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './CustomSelect.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const CustomSelect = ({ options, placeholder }) => {
   const [selectedOption, setSelectedOption] = useState(placeholder);
@@ -28,6 +30,7 @@ const CustomSelect = ({ options, placeholder }) => {
     <div className={styles.customSelect} ref={dropdownRef}>
       <div className={styles.selectSelected} onClick={() => setIsOpen(!isOpen)}>
         {selectedOption}
+        <span className={styles.arrowDown}><FontAwesomeIcon icon={faAngleDown} className={styles.arrowDown} /></span>
       </div>
       {isOpen && (
         <div className={styles.selectItems}>

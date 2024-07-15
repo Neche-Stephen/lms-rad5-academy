@@ -18,6 +18,14 @@
   
 }
 
+@media(max-width:767px){
+  :root {
+    --normalText: 14px;
+    
+  }
+  
+}
+
 @media(max-width:575px){
   :root {
     --bigText: 20px;

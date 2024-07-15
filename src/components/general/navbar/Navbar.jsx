@@ -22,7 +22,7 @@ export default function Navbar({handleShow}) {
         <div className={`${styles.navbar_icon} ms-auto me-4`}><img src={notification_icon} alt="" className='w-100'/></div>
 
         <div className={`${styles.navbar_icon}`}>
-              <div className=''><Link to="/student/dashboard"><img src={profile_icon} alt="" className='w-100'/></Link></div>
+              <div className=''><Link to="/student/profile"><img src={profile_icon} alt="" className='w-100'/></Link></div>
         </div>
 
         <div className='col-1 d-none ms-2 d-sm-block'>

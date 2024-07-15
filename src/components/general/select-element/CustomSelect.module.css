@@ -1,15 +1,23 @@
 .customSelect {
     position: relative;
-    width: 200px;
-    border: 1px solid red;
+    /* width: 200px; */
+    width: 100%;
   }
   
   .selectSelected {
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
+    border: 1px solid var(--crimsonRed);
     padding: 10px;
     cursor: pointer;
     user-select: none;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arrowDown {
+    margin-left: auto;
+    padding-left: 10px;
   }
   
   .selectItems {
@@ -42,6 +50,6 @@
   }
   
   .selectItems div:hover {
-    background-color: #ddd;
+    background-color: #F7FAFD;
   }
   

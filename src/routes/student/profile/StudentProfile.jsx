@@ -41,7 +41,7 @@ export default function StudentProfile() {
 
                 <div className={`${styles.profile_section_wrapper}`}> 
 
-                  <div className={`${styles.profile_section} d-flex flex-wrap mx-auto`}>
+                  <div className={`${styles.profile_section} d-flex flex-wrap mx-auto justify-content-center justify-content-sm-start`}>
                         {/* Section One */}
                       <div className={`${styles.profile_section_one}`}>
                             {/* Personal Details */}
@@ -72,7 +72,7 @@ export default function StudentProfile() {
                               </div>
 
                               {/* Education */}
-                              <div>
+                              <div className='mb-4 mb-sm-0'>
                                 <ProfileComponents.Education />
                               </div>
 
