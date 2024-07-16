@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Offcanvas, Col, Container, Row } from 'react-bootstrap';
 
 import styles from './Sidebar.module.css';
@@ -6,6 +7,11 @@ import ASSETS from '../../../assets';
 
 export default function Sidebar({SidebarItems, showOffcanvas, handleClose, currentItem}) {
     const [sidebarItems, setSidebarItems] = useState(SidebarItems);
+    const navigate = useNavigate();
+
+    const logout = () =>{
+      navigate("/login")
+    }
   return (
     <>
           <Col className={`${styles.offcanvas_wrapper} d-none d-sm-block p-0 position-relative`} style = {{backgroundColor:'var(--softWhite)'}} xs = '3' lg = '2'>
@@ -52,7 +58,7 @@ export default function Sidebar({SidebarItems, showOffcanvas, handleClose, curre
                        }
 
                        <div className={`${styles.logout_btn_wrapper} d-flex flex-wrap justify-content-center`}>
-                          <button className={`${styles.siderbar_logout_btn} normal_text px-5 py-2`}>Log Out</button>
+                          <button onClick={logout} className={`${styles.siderbar_logout_btn} normal_text px-5 py-2`}>Log Out</button>
                        </div>
                     
 
