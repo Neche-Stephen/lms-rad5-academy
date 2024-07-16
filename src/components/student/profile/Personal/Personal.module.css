@@ -1,7 +1,9 @@
 
 
 .personal_details{
-    border: 1px solid #B4B2B2
+    border: 1px solid #B4B2B2;
+    border-radius: 18px;
+
 }
 
 .profile_btn{

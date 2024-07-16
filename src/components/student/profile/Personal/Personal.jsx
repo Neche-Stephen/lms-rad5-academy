@@ -14,7 +14,7 @@ export default function PersonalDetails({showEditProfileModal, setShowEditProfil
   };
 
   return (
-    <div className={`${styles.personal_details} bg-white pt-3 pb-5 px-4 rounded shadow`}>
+    <div className={`${styles.personal_details} bg-white pt-3 pb-5 px-4 shadow`}>
 
           {/* Edit Profile */}
         <div className='d-flex flex-wrap justify-content-end' style={{cursor:"pointer"}} onClick={handleEditClick}><img src={PROFILE_EDIT} alt="" /></div>

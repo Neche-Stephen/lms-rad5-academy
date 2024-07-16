@@ -3,7 +3,7 @@ import styles from "./WorkHistory.module.css";
 
 export default function WorkHistory() {
   return (
-    <div className={`${styles.experience} bg-white rounded py-3 px-3`}>
+    <div className={`${styles.experience} bg-white py-3 px-3`}>
       <div className='title_text mb-3 fw-bold'>Work history</div>
 
       <div className={`${styles.default_experience_view} d-flex flex-wrap px-3 py-3 rounded border justify-content-between`}>

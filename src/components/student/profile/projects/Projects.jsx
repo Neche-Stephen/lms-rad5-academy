@@ -5,7 +5,7 @@ import INFO from "./info.svg";
 
 export default function Projects() {
   return (
-    <div className={`${styles.experience} bg-white rounded py-3 px-3`}>
+    <div className={`${styles.experience} bg-white py-3 px-3`}>
       <div className='title_text mb-2 fw-bold d-flex align-items-center flex-wrap'>
         <span className='me-2'>Projects</span>
         <span><img src={INFO} alt="" /></span>

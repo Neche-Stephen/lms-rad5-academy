@@ -4,7 +4,7 @@ import ADD from './add.svg';
 
 export default function Additional() {
   return (
-    <div className={`${styles.additional} bg-white rounded px-4 py-3`}>
+    <div className={`${styles.additional} bg-white px-4 py-3`}>
         <div className='title_text fw-bold mb-3'>Additional info</div>
 
         <div className='sm_color mb-3'>

@@ -6,7 +6,7 @@ import EDIT from "./images/edit.svg";
 
 export default function Education() {
   return (
-    <div className={`${styles.education} bg-white rounded py-3 px-3`}>
+    <div className={`${styles.education} bg-white py-3 px-3`}>
       <div className='title_text mb-2  fw-bold d-flex align-items-center flex-wrap'>
         <span className='me-2'>Credentials</span>
         <span><img src={INFO} alt="" /></span>
