@@ -4,11 +4,7 @@
 }
 
 
-.logout_btn_wrapper{
-    position: relative;
-    top: 100px;
-    padding-bottom: 30px;
-}
+
 
 
 .offcanvas_container{
@@ -22,6 +18,12 @@
     /* height: calc(100vh - 170px); */
     /* height: 100vh; */
 
+}
+
+@media(max-width:991px){
+    .offcanvas_container{
+        width: 25%;
+    }
 }
 
 
@@ -67,7 +69,11 @@
     }
 }
 
-
+.logout_btn_wrapper{
+    position: relative;
+    top: 100px;
+    padding-bottom: 30px;
+}
 
 .siderbar_logout_btn{
     background-color: white;
@@ -75,5 +81,11 @@
     color: var(--crimsonRed);
     border-radius: 14px;
     box-shadow: 0px 0px 12.3px 2px #5A80B340;
+    white-space: nowrap;
 }
 
+@media(max-width:575px){
+    .logout_btn_wrapper{
+
+    }
+}

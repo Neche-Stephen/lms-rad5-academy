@@ -8,7 +8,7 @@ export default function Sidebar({SidebarItems, showOffcanvas, handleClose, curre
     const [sidebarItems, setSidebarItems] = useState(SidebarItems);
   return (
     <>
-          <Col className={`${styles.offcanvas_wrapper} d-none d-sm-block p-0 position-relative`} style = {{backgroundColor:'var(--softWhite)'}} xs = '2'>
+          <Col className={`${styles.offcanvas_wrapper} d-none d-sm-block p-0 position-relative`} style = {{backgroundColor:'var(--softWhite)'}} xs = '3' lg = '2'>
             <Offcanvas className={`${styles.offcanvas_container}`} show={showOffcanvas} onHide={handleClose} responsive="sm">
                 <Offcanvas.Body>
                     <Container fluid className=''>
@@ -36,7 +36,7 @@ export default function Sidebar({SidebarItems, showOffcanvas, handleClose, curre
                                               <img src={item.icon} alt="" className={`${styles.sidebar_icon}`} />
                                             </div>
                                             {/* Item Name column */}
-                                            <div className={`ms-2 col d-sm-none d-lg-block`}>
+                                            <div className={`ms-2 col-auto col-sm d-sm-none d-lg-block`}>
                                                 <div className='d-flex flex-wrap'>
                                                     <div className={`${styles.normal_text}`}>
                                                       {item.name}
